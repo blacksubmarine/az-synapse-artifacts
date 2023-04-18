@@ -1,0 +1,24 @@
+{
+	"name": "Retail_m3h",
+	"properties": {
+		"Name": "Retail_m3h",
+		"EntityType": "DATABASE",
+		"Description": "",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"Retail\",\"Version\":\"1.3.0\"}}}",
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://data-synapse@adlsgus.dfs.core.windows.net/Retail_m3h",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "synapse-gus-WorkspaceDefaultStorage"
+			}
+		}
+	},
+	"type": "DATABASE"
+}
